@@ -1,8 +1,7 @@
 "use client"
 
 import { motion } from 'framer-motion'
-import { FaReact, FaJs } from 'react-icons/fa'
-import { SiTypescript, SiNextdotjs, SiTailwindcss, SiVite } from 'react-icons/si'
+import Image from "next/image"
 
 export default function AboutMe() {
   const experiencia = [
@@ -59,9 +58,11 @@ export default function AboutMe() {
               <div className="relative bg-gray-800 rounded-2xl p-8 border border-gray-700">
                 <div className="w-32 h-32 bg-gradient-to-br from-purple-400 to-pink-400 rounded-full mx-auto mb-6 p-1 shadow-xl">
                   <div className="w-full h-full rounded-full overflow-hidden">
-                    <img
+                    <Image
                       src="/perfil.jpg"
                       alt="Foto de Ian"
+                      width={128}
+                      height={128}
                       className="w-full h-full object-cover"
                     />
                   </div>

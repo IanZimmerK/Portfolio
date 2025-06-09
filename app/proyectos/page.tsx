@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { FaGithub, FaReact, FaNodeJs, FaJava } from "react-icons/fa";
 import {
   SiTypescript,
@@ -150,8 +151,6 @@ export default function ProyectosPage() {
           </a>
         </motion.div>
 
-        {/* Eliminado el filtrado */}
-
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
           {proyectos.map((proyecto, index) => (
             <motion.div
@@ -163,9 +162,11 @@ export default function ProyectosPage() {
             >
               <div className="bg-gray-800/60 backdrop-blur-md border border-gray-700 rounded-3xl overflow-hidden hover:border-purple-500/70 transition-all duration-300 shadow-lg">
                 <div className="relative overflow-hidden rounded-t-3xl">
-                  <img
+                  <Image
                     src={proyecto.imagen}
                     alt={proyecto.titulo}
+                    width={400}
+                    height={224}
                     className="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-400"
                   />
                   <div className="absolute top-4 left-4 flex gap-3">
