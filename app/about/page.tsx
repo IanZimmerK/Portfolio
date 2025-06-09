@@ -1,38 +1,29 @@
 "use client"
 
 import { motion } from 'framer-motion'
-import { FaReact, FaJs, FaGitAlt, FaFigma } from 'react-icons/fa'
+import { FaReact, FaJs } from 'react-icons/fa'
 import { SiTypescript, SiNextdotjs, SiTailwindcss, SiVite } from 'react-icons/si'
 
 export default function AboutMe() {
-  const skills = [
-    { name: "React", icon: FaReact, level: 95, color: "bg-blue-500" },
-    { name: "TypeScript", icon: SiTypescript, level: 90, color: "bg-blue-600" },
-    { name: "Next.js", icon: SiNextdotjs, level: 85, color: "bg-gray-800" },
-    { name: "JavaScript", icon: FaJs, level: 95, color: "bg-yellow-500" },
-    { name: "Tailwind", icon: SiTailwindcss, level: 90, color: "bg-cyan-500" },
-    { name: "Vite", icon: SiVite, level: 85, color: "bg-purple-500" },
-  ]
-
   const experiencia = [
     { 
-    año: "2025", 
-    titulo: "Ingeniería en Sistemas de Información", 
-    empresa: "Universidad de la Cuenca del Plata", 
-    descripcion: "Actualmente cursando la carrera mientras desarrollo proyectos como freelance. En constante aprendizaje y aplicación de nuevas tecnologías." 
-  },
-  { 
-    año: "2024", 
-    titulo: "Desarrollador Full Stack Freelance", 
-    empresa: "Independiente", 
-    descripcion: "Creación de sitios web responsivos, tiendas online y aplicaciones a medida. Enfocado en la experiencia del usuario y el rendimiento." 
-  },
-  { 
-    año: "2022", 
-    titulo: "Tecnicatura Universitaria en Programación", 
-    empresa: "Universidad Tecnológica Nacional (UTN)", 
-    descripcion: "Formación técnica integral con foco en programación, algoritmos, estructuras de datos y desarrollo de software. Base sólida para el trabajo profesional."   
-  }
+      año: "2025", 
+      titulo: "Ingeniería en Sistemas de Información", 
+      empresa: "Universidad de la Cuenca del Plata", 
+      descripcion: "Actualmente cursando la carrera mientras desarrollo proyectos como freelance. En constante aprendizaje y aplicación de nuevas tecnologías." 
+    },
+    { 
+      año: "2024", 
+      titulo: "Desarrollador Full Stack Freelance", 
+      empresa: "Independiente", 
+      descripcion: "Creación de sitios web responsivos, tiendas online y aplicaciones a medida. Enfocado en la experiencia del usuario y el rendimiento." 
+    },
+    { 
+      año: "2022", 
+      titulo: "Tecnicatura Universitaria en Programación", 
+      empresa: "Universidad Tecnológica Nacional (UTN)", 
+      descripcion: "Formación técnica integral con foco en programación, algoritmos, estructuras de datos y desarrollo de software. Base sólida para el trabajo profesional."   
+    }
   ]
 
   return (
@@ -67,14 +58,14 @@ export default function AboutMe() {
               <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl blur opacity-20"></div>
               <div className="relative bg-gray-800 rounded-2xl p-8 border border-gray-700">
                 <div className="w-32 h-32 bg-gradient-to-br from-purple-400 to-pink-400 rounded-full mx-auto mb-6 p-1 shadow-xl">
-                <div className="w-full h-full rounded-full overflow-hidden">
-                  <img
-                    src="/perfil.jpg"
-                    alt="Foto de Ian"
-                    className="w-full h-full object-cover"
-                  />
+                  <div className="w-full h-full rounded-full overflow-hidden">
+                    <img
+                      src="/perfil.jpg"
+                      alt="Foto de Ian"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
                 </div>
-              </div>
                 <h2 className="text-2xl font-bold text-white mb-4">Ian Zimmermann Kennedy</h2>
                 <p className="text-gray-300 leading-relaxed">
                   Soy desarrollador Full-Stack con más de 2 años de experiencia creando aplicaciones web modernas. 
@@ -113,7 +104,6 @@ export default function AboutMe() {
                 </motion.div>
               ))}
             </div>
-
           </motion.div>
         </div>
 
